@@ -1,0 +1,172 @@
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #243047;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #173b70;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+header p {
+    color: #dbe7f8;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    flex: 1;
+}
+
+/* Search form card */
+.search-section,
+#result-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.search-section h2,
+#result-section h2 {
+    margin-bottom: 12px;
+    color: #173b70;
+}
+
+.search-section > p {
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+/* Form elements */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: 2px solid #6096e8;
+    border-color: #6096e8;
+}
+
+/* Search button */
+button {
+    background-color: #2459a9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #173b70;
+}
+
+/* Feedback message */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #173b70;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .search-section,
+    #result-section {
+        padding: 20px;
+    }
+}
+
+/* Student result details */
+#result-details p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+#result-details h3 {
+    margin: 24px 0 12px;
+    color: #173b70;
+}
+
+/* Subject marks table */
+#result-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#result-details th,
+#result-details td {
+    border: 1px solid #dbe3ef;
+    padding: 12px;
+    text-align: left;
+}
+
+#result-details th {
+    background-color: #173b70;
+    color: white;
+}
+
+#result-details tbody tr:nth-child(even) {
+    background-color: #f3f6fb;
+}
+
+/* Search feedback */
+#message {
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+#result-status {
+    font-weight: bold;
+    color: #16803c;
+}

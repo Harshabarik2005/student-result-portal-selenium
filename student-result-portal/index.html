@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Result Portal</h1>
+        <p>View your academic results online</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Check Your Results</h2>
+            <p>Enter your University Seat Number (USN).</p>
+
+            <form id="result-form">
+                <label for="usn">University Seat Number</label>
+                <input
+                    type="text"
+                    id="usn"
+                    name="usn"
+                    placeholder="Example: 1BI23CS001"
+                >
+                <button type="submit" id="search-btn">
+                    Search Result
+                </button>
+            </form>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="result-section" hidden>
+            <h2>Student Result</h2>
+            <div id="result-details"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Result Portal | Academic Demo Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
